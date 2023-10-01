@@ -1,0 +1,616 @@
+:root{
+    --mainColor:#02d5ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    padding: 150px 160px;
+}
+
+/* The Start Of Nav */
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 20px 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161515;
+}
+nav .phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fff;
+}
+nav .phone a{
+    color: #e8e8e8;
+}
+nav .phone div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+nav .phone div span {
+    color: #e8e8e8;
+    font-size: 18px;
+    font-weight: normal;
+}
+nav .phone div i {
+    font-size: 20px;
+}
+nav .logo {
+    color: var(--mainColor);
+    border: 3px solid var(--mainColor);
+    padding: 1px 8px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+nav .list .touch {
+    background-color: var(--mainColor);
+    padding: 18px 30px;
+    font-size: 18px;
+    color: #101010d7;
+    border: none;
+}
+nav .list .list {
+    color: #fff;
+    font-size: 30px;
+}
+/* The End Of Nav */
+
+/* The Start Of Front Section */
+.front{
+    background-image: url(../images/a.png);
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.front .content {
+    color: var(--mainColor);
+    font-size: 40px;
+}
+/* The End Of Front Section */
+
+/* The Start Of mess Section */
+section.mess {
+    background-color: rgb(10 38 64);
+}
+section.mess .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+section.mess .container .air {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+    gap: 20px;
+}
+section.mess .container .air .lead {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #cfcfcf;
+    font-size: 18px;
+}
+section.mess .container .air .onAir {
+    display: flex;
+    border: 2px solid var(--mainColor);
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px;
+}
+section.mess .container .air .onAir span{
+    color: var(--mainColor);
+    font-size: 40px;
+    font-weight: bold;
+} 
+section.mess .container .air .onAir .mic{
+    background-color: #fff;
+    height: 80px;
+    width: 60px;
+}
+section.mess .container .air>span{
+    color: var(--mainColor);
+    font-size: 25px;
+    font-weight: bold;
+}
+section.mess .container .mess {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #cfcfcf;
+    gap: 10px;
+}
+section.mess .container .mess .name {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+section.mess .container .mess .name div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 20px;
+    gap: 10px;
+}
+section.mess .container .mess .name div input{
+    height: 50px;
+    border: 1px solid #949494;
+    background-color: transparent;
+    width: 100%;
+}
+section.mess .container .mess .contact {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+}
+section.mess .container .mess .contact div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    flex-basis: 50%;
+}
+section.mess .container .mess .contact div input{
+    height: 50px;
+    border: 1px solid #949494;
+    background-color: transparent;
+    width: 100%;
+}
+section.mess .container .mess .select{
+    flex-basis: 100%;
+    width: 100%;
+}
+section.mess .container .mess .select select{
+    height: 50px;
+    width: 100%;
+    border: 1px solid #949494;
+    padding:0 10px;
+    background-color: transparent;
+    color: #cfcfcf;
+    font-size: 20px;
+}
+section.mess .container .mess .mess{
+    flex-basis: 100%;
+    width: 100%;
+}
+section.mess .container .mess .mess div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+section.mess .container .mess .mess textarea{
+    border: 1px solid #949494;
+    width: 100%;
+    background-color: transparent;
+}
+section.mess .container .mess .btn{
+    flex-basis: 100%;
+    width: 100%;
+}
+section.mess .container .mess .btn button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: var(--mainColor);
+    color: rgb(10 38 64);
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+}
+/* The End Of mess Section */
+
+/* The Start Of Single Section */
+section.single{
+    background-image: url(../images/b.jpg);
+    background-attachment: fixed;
+}
+section.single .container{
+    display: flex;
+    background-color: #070707a3;
+    flex-direction: column;
+    gap: 30px;
+}
+section.single .container h2{
+    color: var(--mainColor);
+    font-size: 100px;
+}
+section.single .container .title{
+    color: #fff;
+    font-size: 50px;
+    font-family: system-ui;
+}
+section.single .container .small{
+    color: var(--mainColor);
+    font-size: 18px;
+    font-family: system-ui;
+}
+section.single .container .lead{
+    display: flex;
+    font-family: system-ui;
+    flex-direction: column;
+    color: #cfcfcf;
+    gap: 5px;
+    font-size: 18px;
+}
+section.single .container .btn-book{
+    background-color: var(--mainColor);
+    padding: 18px 16px;
+    width: 150px;
+    border: none;
+    font-size: 16px;
+    color: #333333;
+}
+/* The End Of Single Section */
+
+/* The Start Of multible Section */
+section.multible{
+    background-image: url(../images/c.jpg);
+    background-attachment: fixed;
+}
+section.multible .container{
+    display: flex;
+    background-color: #070707a3;
+    justify-content: flex-end;
+}
+section.multible .container  .right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+section.multible .container .right h2{
+    color: var(--mainColor);
+    font-size: 100px;
+}
+section.multible .container .right .title{
+    color: #fff;
+    font-size: 50px;
+    font-family: system-ui;
+}
+section.multible .container .right .small{
+    color: var(--mainColor);
+    font-size: 18px;
+    font-family: system-ui;
+}
+section.multible .container .right .lead{
+    display: flex;
+    font-family: system-ui;
+    flex-direction: column;
+    color: #cfcfcf;
+    gap: 5px;
+    font-size: 18px;
+}
+section.multible .container .right .btn-book{
+    background-color: var(--mainColor);
+    padding: 18px 16px;
+    width: 150px;
+    border: none;
+    font-size: 16px;
+    color: #333333;
+}
+/* The End Of multible Section */
+
+
+/* The Start Of podcast Section */
+section.podcast{
+    background-image: url(../images/d.jpg);
+    background-attachment: fixed;
+}
+section.podcast .container{
+    display: flex;
+    background-color: #070707cc;
+    flex-direction: column;
+    gap: 30px;
+}
+section.podcast .container h2{
+    color: var(--mainColor);
+    font-size: 100px;
+}
+section.podcast .container .title{
+    color: #fff;
+    font-size: 50px;
+    font-family: system-ui;
+}
+section.podcast .container .small{
+    color: var(--mainColor);
+    font-size: 18px;
+    font-family: system-ui;
+}
+section.podcast .container .lead{
+    display: flex;
+    font-family: system-ui;
+    flex-direction: column;
+    color: #cfcfcf;
+    gap: 5px;
+    font-size: 18px;
+}
+section.podcast .container .btn-book{
+    background-color: var(--mainColor);
+    padding: 18px 16px;
+    width: 150px;
+    border: none;
+    font-size: 16px;
+    color: #333333;
+}
+/* The End Of podcast Section */
+
+/* The Start Of about Section */
+section.about {
+    background-color: #0a0a0a;
+}
+section.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+section.about .container h2{
+    color: #fff;
+    margin-top: -50px;
+    font-size: 45px;
+    text-align: center;
+}
+section.about .container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+section.about .container .top .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    background-color: #111111;
+    flex-basis: 25%;
+    padding: 30px 20px;
+    height: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section.about .container .top .card i{
+    font-size: 30px;
+    color: #b4b4b4;
+}
+section.about .container .top .card span{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+section.about .container .top .card p{
+    color: #b4b4b4;
+    font-size: 16px;
+    height: 120px;
+}
+section.about .container .top .card p span{
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: normal;
+}
+section.about .container .down {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+section.about .container .down .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.about .container .down .card img {
+    width: 100%;
+}
+section.about .container .down .card span {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+section.about .container .down .card ol{
+    list-style: disc;
+    color: #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: inside;
+}
+section.about .container .down .card ol li{
+    font-size: 16px;
+}
+/* The End Of about Section */
+
+/* The Start Of step Section */
+section.step {
+    padding: 80px;
+    text-align: center;
+}
+section.step h2{
+    color: rgb(0, 18, 83);
+    font-size: 45px;
+    font-weight: normal;
+}
+section.step span{
+    color: var(--mainColor);
+    font-size: 45px;
+    font-weight: normal;
+}
+/* The End Of step Section */
+
+/* The Start Of pic Section */
+section.pic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+section.pic div{
+    overflow: hidden;
+}
+section.pic img{
+    width: 100%;
+    filter: saturate(0.5);
+    height: 100%;
+}
+section.pic img:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+section.pic .one {
+    display: flex;
+}
+section.pic .one .left {
+    flex-basis: 75%;
+}
+section.pic .one .right{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+section.pic .one .right div{
+    flex-basis: 50%;
+}
+section.pic .two {
+    display: flex;
+}
+section.pic .two .left {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+section.pic .two .left div{
+    flex-basis: 50%;
+}
+section.pic .two .right{
+    flex-basis: 75%;
+}
+section.pic .three {
+    display: flex;
+}
+section.pic .three .left {
+    flex-basis: 75%;
+}
+section.pic .three .right{
+    flex-basis: 25%;
+}
+/* The End Of pic Section */
+
+/* The Start Of inquire Section */
+section.inquire .container>.mess{
+    background-color: #18191b69;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+}
+section.inquire .container .air .inquire{
+    color: #cfcfcf;
+}
+section.inquire .container .air .lead{
+    color: #cfcfcf;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* The End Of inquire Section */
+
+/* The Start Of footer Section */
+footer{
+    background-color: #111111;
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: #cfcfcf;
+}
+footer .container .top {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+footer .container .top div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    gap: 20px;
+}
+footer .container .top div span{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .container .top div p{
+    color: #444444;
+}
+footer .container .top div p:hover{
+    color: var(--mainColor);
+}
+footer .container .top div p a{
+    color: #444444;
+    font-size: 20px;
+    text-decoration: underline;
+}
+footer .container .top div p a:hover{
+    color: var(--mainColor);
+}
+footer .container .top div ol{
+    list-style: disc;
+    list-style-position: inside;
+    color: #444444;
+}
+footer .container .top div ol li:hover{
+    color: var(--mainColor);
+}
+footer .container .top div .icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+footer .container .top div .icons i{
+    font-size: 26px;
+    width: 18%;
+}
+footer .container .top div .icons i:hover{
+    color: var(--mainColor);
+}
+footer .container .down {
+    display: flex;
+    justify-content: space-between;
+    color: #b4b4b4;
+}
+/* The End Of footer Section */
